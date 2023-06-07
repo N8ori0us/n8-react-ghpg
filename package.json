@@ -1,8 +1,8 @@
 {
   "name": "n8-react-ghpg",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
-  "homepage": "http://N8ori0us.github.io/n8-react-ghpg",
+  "homepage": "https://n8ori0us.github.io/n8-react-ghpg/",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
