@@ -13,6 +13,26 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav{ grid-area: nav;}
+.header{ grid-area: header;}
+.menu{ grid-area: menu;}
+.body{ grid-area: body;}
+.footer{ grid-area: footer;}
+.grid-layout {
+  display: grid;
+  grid-template-areas: 
+  'menu nav nav nav nav nav'
+  'menu header header header header header'
+  'menu body body body body body'
+  'menu footer footer footer footer footer';
+  gap: 10px;
+  background-color: #8b5b31;
+  padding: 10px;
+}
 
 a {
   font-weight: 500;
@@ -37,6 +57,7 @@ h1 {
 }
 
 button {
+  grid-area: body;
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
